@@ -21,6 +21,8 @@ Note that none of the implementations handle `NaN`s or `inf`. You could implemen
 
 It appears that gcc does not properly optimize the code, which is why I'd recommend using clang if you want to get the best possible performance.
 
+You can find the generated assembly here: <https://godbolt.org/z/xx35M31fo>
+
 Using the provided flags, these are the results I get on my hardware:
 
 ```
