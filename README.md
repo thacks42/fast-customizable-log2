@@ -12,7 +12,7 @@ This contains a few performance and acccuracy benchmarks. Enjoy.
 
 This code implements a reasonably fast log2 approximation with customizable precision/performance.
 
-It provides two templated functions: `log2_approx_lerp<N>` and `log2_approx_cubic<N>` which perform a linear/cubic approximation of log2 using "fancy math" and a lookup table (LUT).
+It provides two templated functions: `log2_approx_lerp<N>` and `log2_approx_cubic<N>` which perform a linear/cubic approximation of log2 using "fancy math" and a (small) lookup table (LUT).
 The template parameter can be used to control the size of the LUT as a power of two: LUT-size = 2^N.
 
 Note that none of the implementations handle `NaN`s or `inf`. You could implement proper `NaN` and `inf` handling, but those are outside the scope of this project.
